@@ -1,6 +1,6 @@
 > [!WARNING]
 > DO NOT RUN IN PRODUCTION. This is meant for lab testing, for blue teams to work on identifying IoCs, event types, and behavior.
-> Also, this tool is provided as-is. No support is planned apart from standard review or pull requests you may want to create. 
+> Also, this tool is provided as-is. No support is planned apart from standard review on pull requests you may want to create. 
 > Don't run this from a Windows host. Do it from linux, or from a VM (to avoid RPC services conflicts).
 
 # Theory
@@ -52,7 +52,7 @@ This is needed for the legit DC to know how to reach the rogue DC and avoid `ERR
 dnstool.py -u "sevenkingdoms.local"/"tyron.lannister" -p "Alc00L&S3x" --record 'fake701' --action add --data "$ATTACKER_IP" "kingslanding.sevenkingdoms.local"
 ```
 
-> [!INFO]
+> [!TIP]
 > If the command doesn't work for some reason, add the DNS entry manually through the DNS tools on the domain controller.
 
 ## 3. Rogue DC credentials
@@ -94,9 +94,9 @@ You'd need to run Wireshark on the legit domain controller, but the most probabl
 
 # Credits
 
-Credits go to Benjamin Delpy and Vincent Letoux for the initial discovery, talks, and implementation in Mimikatz.
+This project wouldn't have been possible without the immense help of [Alessandro Iandoli "MrAle98"](https://github.com/MrAle98), a talented researcher met during the development. Thank you Alessandro!
 
-This project wouldn't have been possible without the immense help of Alessandro Iandoli, a talented researcher met during the development. Thank you Alessandro!
+Credits go to Benjamin Delpy and Vincent Letoux for the initial discovery, talks, and implementation in Mimikatz.
 
 I'd like to thank Volker as well, who took part in the early development.
 
