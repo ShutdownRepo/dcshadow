@@ -1,0 +1,18 @@
+setuptools~=65.5.1
+six~=1.16.0
+charset_normalizer
+pyasn1>=0.2.3
+pycryptodomex
+pyOpenSSL>=21.0.0
+ldap3>=2.5,!=2.5.2,!=2.5.0,!=2.6
+ldapdomaindump>=0.9.0
+flask>=1.0
+pyreadline;sys_platform == 'win32'
+dsinternals~=1.2.4
+pycryptodome
+
+impacket~=0.12.0.dev1+20240121.11355.c972f2d0
+hexdump~=3.3
+R2Log~=1.0.1
+dnspython~=2.4.2
+cryptography~=41.0.7
